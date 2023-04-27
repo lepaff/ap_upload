@@ -1,0 +1,25 @@
+{namespace ap=AP\ApUpload\ViewHelpers}
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<label for="title">
+	<f:translate key="tx_apupload_domain_model_record.title" />
+</label><br />
+	<f:form.textfield property="title" id="title" /><br />
+<label for="files">
+	<f:translate key="tx_apupload_domain_model_record.files" />
+</label><br />
+    <f:form.upload property="files" multiple="1" class="recordFileUpload" id="recordFileUpload" /><br />
+    <f:if condition="{record.files}">
+        <f:image image="{record.files}" alt="" width="50"/>
+    </f:if><br />
+<label for="deleteImage">Delete image</label>
+<f:form.checkbox id="deleteImage" name="deleteImage" value="1" />
+<br />
+</html>
+
+<f:comment>
+    <ap:form.upload property="files">
+        <f:if condition="{resource}">
+            <f:image image="{resource}" alt="" width="50"/>
+        </f:if>
+    </ap:form.upload>
+</f:comment>

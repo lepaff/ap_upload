@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:ap_upload/Resources/Private/Language/locallang_csh_tx_apupload_domain_model_record.xlf" date="2023-04-26T13:50:49Z" product-name="ap_upload">
+		<header/>
+		<body>
+			<trans-unit id="title.description" resname="title.description">
+				<source>title</source>
+			</trans-unit>
+			<trans-unit id="files.description" resname="files.description">
+				<source>files</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

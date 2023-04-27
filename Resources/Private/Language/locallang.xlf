@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:ap_upload/Resources/Private/Language/locallang.xlf" date="2023-04-26T13:50:49Z" product-name="ap_upload">
+		<header/>
+		<body>
+			<trans-unit id="tx_apupload_domain_model_record" resname="tx_apupload_domain_model_record">
+				<source>Record</source>
+			</trans-unit>
+			<trans-unit id="tx_apupload_domain_model_record.description" resname="tx_apupload_domain_model_record.description">
+				<source>Record</source>
+			</trans-unit>
+			<trans-unit id="tx_apupload_domain_model_record.title" resname="tx_apupload_domain_model_record.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_apupload_domain_model_record.title.description" resname="tx_apupload_domain_model_record.title.description">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_apupload_domain_model_record.files" resname="tx_apupload_domain_model_record.files">
+				<source>Files</source>
+			</trans-unit>
+			<trans-unit id="tx_apupload_domain_model_record.files.description" resname="tx_apupload_domain_model_record.files.description">
+				<source>Files</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

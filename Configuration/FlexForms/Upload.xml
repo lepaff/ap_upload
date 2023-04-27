@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3DataStructure>
+	<sheets>
+		<general>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>Display type</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<switchableControllerActions>
+						<TCEforms>
+							<label>Action</label>
+							<onChange>reload</onChange>
+							<config>
+								<type>select</type>
+								<renderType>selectSingle</renderType>
+								<items type="array">
+									<numIndex index="1" type="array">
+										<numIndex index="0">Liste aller Spezialisten</numIndex>
+										<numIndex index="1">Specialist->list</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">Neue Frage an einen Spezialisten</numIndex>
+										<numIndex index="1">Questions->new;Questions->create;Questions->feedback</numIndex>
+									</numIndex>
+									<numIndex index="3" type="array">
+										<numIndex index="0">Liste aller Fragen</numIndex>
+										<numIndex index="1">Questions->list</numIndex>
+									</numIndex>
+									<numIndex index="4" type="array">
+										<numIndex index="0">Antwort auf Frage (Detailansicht)</numIndex>
+										<numIndex index="1">Questions->show</numIndex>
+									</numIndex>
+									<numIndex index="5" type="array">
+										<numIndex index="0">Spezialist Detailansicht</numIndex>
+										<numIndex index="1">Specialist->show</numIndex>
+									</numIndex>
+									<numIndex index="6" type="array">
+										<numIndex index="0">Latest Questions Teaser Slider</numIndex>
+										<numIndex index="1">Questions->teaser</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</switchableControllerActions>
+					<settings.storageFolder>
+						<TCEforms>
+							<label>Storage folder</label>
+							<config>
+								<type>group</type>
+								<internal_type>db</internal_type>
+								<allowed>pages</allowed>
+								<size>1</size>
+								<maxitems>1</maxitems>
+								<minitems>1</minitems>
+								<eval>required</eval>
+							</config>
+						</TCEforms>
+					</settings.storageFolder>
+					<settings.teaserDetailView>
+						<TCEforms>
+							<label>Teaser Detailansicht</label>
+							<displayCond>FIELD:switchableControllerActions:=:Questions->teaser</displayCond>
+							<config>
+								<type>group</type>
+								<internal_type>db</internal_type>
+								<allowed>pages</allowed>
+								<size>1</size>
+								<maxitems>1</maxitems>
+								<minitems>0</minitems>
+								<show_thumbs>1</show_thumbs>
+								<eval>required</eval>
+							</config>
+						</TCEforms>
+					</settings.teaserDetailView>
+					<settings.senderEmail>
+						<TCEforms>
+							<label>Absender E-Mail</label>
+							<displayCond>FIELD:switchableControllerActions:=:Questions->new;Questions->create;Questions->feedback</displayCond>
+							<config>
+								<type>input</type>
+								<size>100</size>
+							</config>
+						</TCEforms>
+					</settings.senderEmail>
+					<settings.senderName>
+						<TCEforms>
+							<label>Absender Name</label>
+							<displayCond>FIELD:switchableControllerActions:=:Questions->new;Questions->create;Questions->feedback</displayCond>
+							<config>
+								<type>input</type>
+								<size>100</size>
+							</config>
+						</TCEforms>
+					</settings.senderName>
+					<settings.receiverEmail>
+						<TCEforms>
+							<label>Empfänger E-Mail</label>
+							<displayCond>FIELD:switchableControllerActions:=:Questions->new;Questions->create;Questions->feedback</displayCond>
+							<config>
+								<type>input</type>
+								<size>100</size>
+							</config>
+						</TCEforms>
+					</settings.receiverEmail>
+					<settings.receiverName>
+						<TCEforms>
+							<label>Empfänger Name</label>
+							<displayCond>FIELD:switchableControllerActions:=:Questions->new;Questions->create;Questions->feedback</displayCond>
+							<config>
+								<type>input</type>
+								<size>100</size>
+							</config>
+						</TCEforms>
+					</settings.receiverName>
+					<settings.receiverEmailLocal>
+						<TCEforms>
+							<label>Empfänger E-Mail (LOKAL)</label>
+							<displayCond>FIELD:switchableControllerActions:=:Questions->new;Questions->create;Questions->feedback</displayCond>
+							<config>
+								<type>input</type>
+								<size>100</size>
+							</config>
+						</TCEforms>
+					</settings.receiverEmailLocal>
+					<settings.receiverNameLocal>
+						<TCEforms>
+							<label>Empfänger Name (LOKAL)</label>
+							<displayCond>FIELD:switchableControllerActions:=:Questions->new;Questions->create;Questions->feedback</displayCond>
+							<config>
+								<type>input</type>
+								<size>100</size>
+							</config>
+						</TCEforms>
+					</settings.receiverNameLocal>
+					<settings.mailSubject>
+						<TCEforms>
+							<label>Mail Betreff</label>
+							<displayCond>FIELD:switchableControllerActions:=:Questions->new;Questions->create;Questions->feedback</displayCond>
+							<config>
+								<type>input</type>
+								<size>100</size>
+							</config>
+						</TCEforms>
+					</settings.mailSubject>
+					<settings.mailSubjectAdmin>
+						<TCEforms>
+							<label>Mail Betreff (Admin)</label>
+							<displayCond>FIELD:switchableControllerActions:=:Questions->new;Questions->create;Questions->feedback</displayCond>
+							<config>
+								<type>input</type>
+								<size>100</size>
+							</config>
+						</TCEforms>
+					</settings.mailSubjectAdmin>
+					<settings.detailView>
+						<TCEforms>
+							<label>Detailansicht</label>
+							<displayCond>FIELD:switchableControllerActions:=:Questions->list</displayCond>
+							<config>
+								<type>group</type>
+								<internal_type>db</internal_type>
+								<allowed>pages</allowed>
+								<size>1</size>
+								<maxitems>1</maxitems>
+								<minitems>0</minitems>
+								<show_thumbs>1</show_thumbs>
+								<eval>required</eval>
+							</config>
+						</TCEforms>
+					</settings.detailView>
+					<settings.feedbackPage>
+						<TCEforms>
+							<label>Feedback page</label>
+							<displayCond>FIELD:switchableControllerActions:=:Questions->new;Questions->create;Questions->feedback</displayCond>
+							<config>
+								<type>group</type>
+								<internal_type>db</internal_type>
+								<allowed>pages</allowed>
+								<size>1</size>
+								<maxitems>1</maxitems>
+								<minitems>0</minitems>
+								<show_thumbs>1</show_thumbs>
+							</config>
+						</TCEforms>
+					</settings.feedbackPage>
+					<settings.uploadFolder>
+						<TCEforms>
+							<label>Upload folder</label>
+							<displayCond>FIELD:switchableControllerActions:=:Questions->new;Questions->create;Questions->feedback</displayCond>
+							<config>
+								<type>group</type>
+								<internal_type>db</internal_type>
+								<allowed>sys_file_storage</allowed>
+								<size>1</size>
+								<maxitems>1</maxitems>
+								<minitems>0</minitems>
+								<show_thumbs>1</show_thumbs>
+								<eval>required</eval>
+							</config>
+						</TCEforms>
+					</settings.uploadFolder>
+					<settings.answerTeaserToListHeadline>
+						<TCEforms>
+							<label>Teaser to list headline</label>
+							<displayCond>FIELD:switchableControllerActions:=:Questions->show</displayCond>
+							<config>
+								<type>input</type>
+								<size>100</size>
+								<eval>required</eval>
+							</config>
+						</TCEforms>
+					</settings.answerTeaserToListHeadline>
+					<settings.answerTeaserToListBodytext>
+						<TCEforms>
+							<label>Teaser to list bodytext</label>
+							<displayCond>FIELD:switchableControllerActions:=:Questions->show</displayCond>
+							<config>
+								<type>text</type>
+								<cols>24</cols>
+								<rows>3</rows>
+							</config>
+						</TCEforms>
+					</settings.answerTeaserToListBodytext>
+					<settings.answerTeaserToListLink>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>Teaser to list link</label>
+							<displayCond>FIELD:switchableControllerActions:=:Questions->show</displayCond>
+							<config>
+								<type>input</type>
+								<size>30</size>
+								<eval>trim</eval>
+								<softref>typolink,typolink_tag,images,url</softref>
+								<wizards>
+									<_PADDING>2</_PADDING>
+									<link>
+										<type>popup</type>
+										<title>Link</title>
+										<module>
+											<name>wizard_element_browser</name>
+											<urlParameters>
+												<mode>wizard</mode>
+											</urlParameters>
+										</module>
+										<icon>link_popup.gif</icon>
+										<script>browse_links.php?mode=wizard</script>
+										<params>
+											<!--<blindLinkOptions>page,file,folder,url,spec</blindLinkOptions>-->
+										</params>
+										<JSopenParams>height=500,width=500,status=0,menubar=0,scrollbars=1</JSopenParams>
+									</link>
+								</wizards>
+							</config>
+						</TCEforms>
+					</settings.answerTeaserToListLink>
+					<settings.answerTeaserToListLinkText>
+						<TCEforms>
+							<label>Teaser to list linktext</label>
+							<displayCond>FIELD:switchableControllerActions:=:Questions->show</displayCond>
+							<config>
+								<type>input</type>
+								<size>100</size>
+								<eval>required</eval>
+							</config>
+						</TCEforms>
+					</settings.answerTeaserToListLinkText>
+				</el>
+			</ROOT>
+		</general>
+	</sheets>
+</T3DataStructure>
